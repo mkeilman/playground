@@ -1,0 +1,4 @@
+# other dependencies in setup.py
+# has to be installed before setup.py is run
+sphinx_rtd_theme
+
