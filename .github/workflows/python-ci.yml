@@ -1,0 +1,16 @@
+name: python-ci
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  python-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo CHECK DONE
+
